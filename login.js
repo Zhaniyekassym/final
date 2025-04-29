@@ -57,3 +57,13 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = "/Users/ailananariman/final project/welcome page/index.html";
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const backButton = document.querySelector(".back-button");
+  if (backButton) {
+      backButton.addEventListener("click", function (event) {
+          event.preventDefault();
+          window.history.back(); // This will go back to the previous page
+      });
+  }
+});

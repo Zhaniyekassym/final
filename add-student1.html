@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Student</title>
+  <link rel="stylesheet" href="add-student1.css" />
+</head>
+<body>      
+  <div class="container">
+    <div class="illustration">
+      <button class="back-button">
+        <img src="pictures/Group_75.svg" alt="Back" />
+      </button>
+      <img src="pictures/—Pngtree—landing page builder isometric style_15608530 (1) 1.svg" alt="Illustration" />
+    </div>
+    <div class="form-section">        
+      <form id="authForm">
+        <h2 id="formTitle">Add student</h2>
+        <div id="nameField" class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Student name" />
+        </div>
+        <div id="numberField" class="input-group">
+          <label for="number">Id number</label>
+          <input type="number" id="number" placeholder="123456" min="0" inputmode="numeric" oninput="this.value = this.value.replace(/[^0-9]/g, '')" />
+        </div>        
+        <div class="input-group">
+          <label for="grade">Grade and Section</label>
+          <input type="grade" id="grade" placeholder="1A" />
+        </div>
+        <button type="Add" class="btn">Add</button>        
+      </form>
+    </div>
+  </div>
+  <script src="add-student1.js"></script>
+</body>
+</html>

@@ -1,237 +1,233 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
-    padding: 20px;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px;
+  position: relative;
 }
 
 /* Logo positioned at the left top */
 .logo {
-    position: absolute;
-    top: 30px;
-    left: 200px;
+  position: absolute;
+  top: 30px;
+  left: 200px;
 }
 
 .logo img {
-    width: 100px; /* Adjust size */
-    height: auto;
+  width: 100px; /* Adjust size */
+  height: auto;
 }
 
 /* Navigation centered between logo and buttons */
 nav {
-    position: absolute;
-    top: 40px; /* Reduced from 60px */
-    left: 40%;
-    transform: translateX(-50%);
+  position: absolute;
+  top: 40px; /* Reduced from 60px */
+  left: 40%;
+  transform: translateX(-50%);
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 1em;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #6a0dad; /* Purple hover effect */
+  color: #6a0dad; /* Purple hover effect */
 }
 
 /* Buttons positioned at the right top */
 .auth-buttons {
-    position: absolute;
-    top: 30px; /* Reduced from 50px */
-    right: 200px;
+  position: absolute;
+  top: 30px; /* Reduced from 50px */
+  right: 200px;
 }
 
 .auth-buttons button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 45px;
-    cursor: pointer;
-    font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .sign-up {
-    background-color: white;
-    border: 2px solid #6a0dad;
-    color: black;
-    font-weight: bold;
-    border-radius: 45px;
-    padding: 10px 30px; /* Adjust width to make it more rectangular */
+  background-color: white;
+  border: 2px solid #6a0dad;
+  color: black;
+  font-weight: bold;
+  border-radius: 45px;
+  padding: 10px 30px; /* Adjust width to make it more rectangular */
 }
 
 .log-in {
-    background-color: #6a0dad;
-    color: white;
+  background-color: #6a0dad;
+  color: white;
 }
 
 
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  
 }
 
 .hero-text {
-    max-width: 50%;
-    margin-left: 150px; /* Adjust this value as needed */
-    margin-top: -5px;
+  max-width: 50%;
+  margin-left: 150px; /* Adjust this value as needed */
+  margin-top: -5px;
 }
 
 .hero-text h1 {
-    font-size: 4.5em;
-    color: black;
-    max-width: 700px;
-    word-wrap: break-word;
-    margin-bottom: 5px; /* Reduce space below h1 */
+  font-size: 4.5em;
+  color: black;
+  max-width: 700px;
+  word-wrap: break-word;
+  margin-bottom: 5px; /* Reduce space below h1 */
 }
 
 .hero-text p {
-    color: gray;
-    margin-top: 5px; /* Reduce space above p */
+  color: gray;
+  margin-top: 5px; /* Reduce space above p */
 }
 
 .buttons {
-    display: flex;
-    gap: 20px; /* Adds space between buttons */
+  display: flex;
+  gap: 20px; /* Adds space between buttons */
 }
 
 .buttons button {
-    padding: 15px 40px; /* Increase padding for a larger button */
-    border-radius: 45px; /* Keep rounded corners */
-    cursor: pointer;
-    margin-top: 10px;
-    font-size: 1em;
-    text-align: center;
-    display: inline-block;
-    min-width: 160px; /* Ensures a wider button */
+  padding: 15px 40px; /* Increase padding for a larger button */
+  border-radius: 45px; /* Keep rounded corners */
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1em;
+  text-align: center;
+  display: inline-block;
+  min-width: 160px; /* Ensures a wider button */
 }
 
 .get-started {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .learn-more {
-    background-color: white;
-    border: 2px solid #6a0dad;
-    color: #6a0dad;
+  background-color: white;
+  border: 2px solid #6a0dad;
+  color: #6a0dad;
 }
 
 .hero-image img {
-    width: 100%; /* Fills the entire container */
-    max-width: none; /* Removes any width limit */
-    height: auto;
-    display: block;
+  width: 100%; /* Fills the entire container */
+  max-width: none; /* Removes any width limit */
+  height: auto;
+  display: block;
 }
 
 .page1 {
-    height: 100vh; /* Full screen height */
-    background: url('pictures/home.svg') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
+  height: 100vh; /* Full screen height */
+  background: url('pictures/home.svg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 .page2 {
-    height: 100vh; /* Full-screen height */
-    background: url('pictures/page2ndelement.svg') no-repeat center center ;
-    background-size: cover; /* Ensures it fills the screen */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative
+  height: 100vh; /* Full-screen height */
+  background: url('pictures/page2ndelement.svg') no-repeat center center ;
+  background-size: cover; /* Ensures it fills the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative
 }
 
 /* Slider Container */
 .slider {
-    width: 100vw; /* Full width of viewport */
-    overflow: hidden;
-    position: relative;
-    white-space: nowrap;
+  width: 100vw; /* Full width of viewport */
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
 }
 
 /* Moving Track */
 .slide-track {
-    display: flex;
-    width: 200%; /* Ensures seamless looping */
-    animation: scroll 10s linear infinite; /* Adjust speed */
+  display: flex;
+  width: 200%; /* Ensures seamless looping */
+  animation: scroll 10s linear infinite; /* Adjust speed */
 }
 
 /* Individual Slide */
 .slide {
-    flex: 0 0 auto;
-    width: 25vw; /* Each image takes 25% of screen width (4 images in a row) */
+  flex: 0 0 auto;
+  width: 25vw; /* Each image takes 25% of screen width (4 images in a row) */
 }
 
 /* Ensuring Images Fill Space */
 .slide img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Animation for infinite horizontal scrolling */
 @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* Moves half the track to create seamless loop */
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Moves half the track to create seamless loop */
 }
 
-.page3 {
-    height: 115vh; /* Limits height to 80% of viewport but not more than 600px */
-    background: url('pictures/page3.svg') no-repeat center center;
-    background-size: contain; /* Keeps full image visible */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/*students page add button*/
 .page2 {
-    position: relative; /* Important */
-    height: 100vh;
-    background: url('pictures/page2ndelement.svg') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make sure section fills the viewport height */
+  flex-direction: column;
 }
 
-.Page2ndElement {
-    position: absolute;
-    top: -50px;
-    right: -70px;
-    width: 350px;
-    height: auto;
-    animation: floatUpDown 3s ease-in-out infinite;
-    z-index: 2;
+.add-button-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@keyframes floatUpDown {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0); }
+.add-button {
+  background-color: #6D28D9;
+  color: white;
+  padding: 20px 50px; /* Bigger button */
+  border: none;
+  border-radius: 30px;
+  font-size: 24px; /* Bigger text */
+  font-weight: bold; /* Optional: make text bold */
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-/* THIRD PAGE*/
+.add-button:hover {
+  background-color: #5a22b3;
+}
+
 .page3 {
   height: 115vh; /* Limits height to 80% of viewport but not more than 600px */
   background: url('pictures/page3.svg') no-repeat center center;
@@ -241,230 +237,267 @@ nav ul li a:hover {
   align-items: center;
 }
 
-.bar-container {
+.page2 {
+  position: relative; /* Important */
+  height: 100vh;
+  background: url('pictures/students2page.svg') no-repeat center center;
+  background-size: cover;
   display: flex;
-  gap: 50px;
-  width: 1131px;
-  height: 721px;
   justify-content: center;
   align-items: center;
-  margin-top: 50px; /* Add this line (you can adjust 50px as you like) */
+  overflow: hidden;
+}
+
+.Page2ndElement {
+  position: absolute;
+  top: -50px;
+  right: -70px;
+  width: 350px;
+  height: auto;
+  animation: floatUpDown 3s ease-in-out infinite;
+  z-index: 2;
+}
+
+@keyframes floatUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+/* THIRD PAGE*/
+.page3 {
+height: 115vh; /* Limits height to 80% of viewport but not more than 600px */
+background: url('pictures/page3.svg') no-repeat center center;
+background-size: contain; /* Keeps full image visible */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.bar-container {
+display: flex;
+gap: 50px;
+width: 1131px;
+height: 721px;
+justify-content: center;
+align-items: center;
+margin-top: 50px; /* Add this line (you can adjust 50px as you like) */
 }
 
 .bar {
-  position: relative;
-  width: 300px;
-  height: 500px;
-  border-radius: 20px;
-  overflow: hidden;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+position: relative;
+width: 300px;
+height: 500px;
+border-radius: 20px;
+overflow: hidden;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
 }
 
 .bar-title {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 20px;
-  z-index: 2;
+position: absolute;
+top: 20px;
+left: 50%;
+transform: translateX(-50%);
+font-size: 20px;
+z-index: 2;
 }
 
 .bar-info {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
-  font-size: 16px;
-  z-index: 2;
+position: absolute;
+bottom: 20px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+padding: 0 20px;
+font-size: 16px;
+z-index: 2;
 }
 .bar-info .right {
-  position: relative;
-  right: 30px; /* move 5px to the left */
+position: relative;
+right: 30px; /* move 5px to the left */
 }
 
 .liquid {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50%;
-  border-radius: 0 0 20px 20px;
-  animation: wave 4s ease-in-out infinite;
-  z-index: 1;
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 50%;
+border-radius: 0 0 20px 20px;
+animation: wave 4s ease-in-out infinite;
+z-index: 1;
 }
 
 .subject1 {
-  background-color: #FFC1C9;
+background-color: #FFC1C9;
 }
 .subject1 .liquid {
-  background-color: #FD8F9C;
+background-color: #FD8F9C;
 }
 
 .subject2 {
-  background-color: #FBDFC1;
+background-color: #FBDFC1;
 }
 .subject2 .liquid {
-  background-color: #F9B578;
+background-color: #F9B578;
 }
 
 .subject3 {
-  background-color: #88F5FF;
+background-color: #88F5FF;
 }
 .subject3 .liquid {
-  background-color: #3FE3F2;
+background-color: #3FE3F2;
 }
 
 /*PAGE 4*/
 .page4 {
-  height: 115vh; /* Limits height to 80% of viewport but not more than 600px */
-  background: url('pictures/GRADES.svg') no-repeat center center;
-  background-size: contain; /* Keeps full image visible */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+height: 115vh; /* Limits height to 80% of viewport but not more than 600px */
+background: url('pictures/GRADES.svg') no-repeat center center;
+background-size: contain; /* Keeps full image visible */
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 /*FOOTER*/  
-  .bar-footer {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 20px;
-    font-weight: 600;
-    z-index: 2;
-  }
-  
-  .bar-footer .left {
-    color: #333;
-  }
-  
-  .bar-footer .right {
-    color: #c0392b;
-  }
+.bar-footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.bar-footer .left {
+  color: #333;
+}
+
+.bar-footer .right {
+  color: #c0392b;
+}
 
 .site-footer {
-    background-color: rgba(192, 132, 252, 0.3);
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    padding: 100px 100px; /* left and right margin */
-    margin-top: 100px;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .footer-title {
-    color: #6D28D9;
-    font-size: 64px; /* or your desired size */
-    font-weight: bold;
-    line-height: 1.1; /* ⬅️ Lower value = tighter line spacing */
-    margin-bottom: 1rem; /* optional spacing below */
-    margin-top: 0;
-    padding-top: 10px;
-    position: relative;
-    top: -50px; /* move it up */
-  }  
-  
-  
-  .footer-nav {
-    display: flex;
-    gap: 100px;
-    margin-top: 20px;
-    margin-left: 10px;
-  }
-  
-  .footer-column p {
-    margin: 6px 0;
-    font-weight: 300;
-  }
-  
-  .footer-column strong {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: 600;
-  }
-  
-  .footer-right {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 16px; /* space between rights text and button */
-    padding: 0 40px 40px 0;
-  }
-  
-  .footer-right p {
-    display: block;        /* Stack vertically */
-    font-weight: bold;     /* Make bold */
-    margin: 4px 0;          /* Optional: small spacing between lines */
-  }
+  background-color: rgba(192, 132, 252, 0.3);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 100px 100px; /* left and right margin */
+  margin-top: 100px;
+}
 
-  .footer-right p:last-child {
-    margin: 0;
-    font-size: 14px;
-  }
-  
-  .scroll-top-icon {
-    position: static;
-    bottom: 60px;
-    right: 60px;
-    background-color: #6D28D9;
-    border: none;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    z-index: 1000; 
-  }
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-  .footer-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
-    margin-top: 250px;
-  } 
+.footer-title {
+  color: #6D28D9;
+  font-size: 64px; /* or your desired size */
+  font-weight: bold;
+  line-height: 1.1; /* ⬅️ Lower value = tighter line spacing */
+  margin-bottom: 1rem; /* optional spacing below */
+  margin-top: 0;
+  padding-top: 10px;
+  position: relative;
+  top: -50px; /* move it up */
+}  
 
-  .scroll-top-icon img {
-    width: 20px;
-    height: 20px;
-  }  
-  
-  .scroll-top-icon:hover {
-    background-color: #FFCE6A;
-  }
-  
-  .footer-bottom-bar {
-    position: fixed;
-    bottom: 70px;
-    right: 140px; /* distance from edge */
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 14px;
-    z-index: 999;
-  }
-  
-  .footer-nav strong,
-.footer-nav p {
-  transition: color 0.3s ease;
+
+.footer-nav {
+  display: flex;
+  gap: 100px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.footer-column p {
+  margin: 6px 0;
+  font-weight: 300;
+}
+
+.footer-column strong {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.footer-right {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px; /* space between rights text and button */
+  padding: 0 40px 40px 0;
+}
+
+.footer-right p {
+  display: block;        /* Stack vertically */
+  font-weight: bold;     /* Make bold */
+  margin: 4px 0;          /* Optional: small spacing between lines */
+}
+
+.footer-right p:last-child {
+  margin: 0;
+  font-size: 14px;
+}
+
+.scroll-top-icon {
+  position: static;
+  bottom: 60px;
+  right: 60px;
+  background-color: #6D28D9;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000; 
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 250px;
+} 
+
+.scroll-top-icon img {
+  width: 20px;
+  height: 20px;
+}  
+
+.scroll-top-icon:hover {
+  background-color: #FFCE6A;
+}
+
+.footer-bottom-bar {
+  position: fixed;
+  bottom: 70px;
+  right: 140px; /* distance from edge */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  z-index: 999;
+}
+
+.footer-nav strong,
+.footer-nav p {
+transition: color 0.3s ease;
+cursor: pointer;
 }
 
 .footer-nav strong:hover,
 .footer-nav p:hover {
-  color: #6D28D9;
+color: #6D28D9;
 }

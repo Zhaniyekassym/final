@@ -37,3 +37,16 @@ function scrollToTop() {
         behavior: 'smooth'
     });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Existing code...
+
+    const addStudentBtn = document.getElementById("addStudentBtn");
+    if (addStudentBtn) {
+        addStudentBtn.addEventListener("click", function () {
+            window.location.href = "add-student1.html";
+        });
+    }
+
+    // Other buttons like learn-more, get-started, back, etc...
+});
