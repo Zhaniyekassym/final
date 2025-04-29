@@ -50,3 +50,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Other buttons like learn-more, get-started, back, etc...
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Existing code...
+  
+    // Navigation scroll to sections
+    const navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach(link => {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        const targetId = this.getAttribute("data-target");
+        const section = document.getElementById(targetId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+  });
+  
