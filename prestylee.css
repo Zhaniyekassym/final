@@ -234,12 +234,15 @@ nav ul li a:hover {
 }
 
 .page3 {
-  height: 115vh; /* Limits height to 80% of viewport but not more than 600px */
+  height: 115vh;
   background: url('pictures/page3.svg') no-repeat center center;
-  background-size: contain; /* Keeps full image visible */
+  background-size: contain;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  padding-top: 80px;
+  position: relative;
 }
 
 .page2 {
@@ -270,94 +273,157 @@ nav ul li a:hover {
 }
 
 /* THIRD PAGE*/
-.page3 {
-height: 115vh; /* Limits height to 80% of viewport but not more than 600px */
-background: url('pictures/page3.svg') no-repeat center center;
-background-size: contain; /* Keeps full image visible */
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
+/* Page 3 - Subject Bars */
 .bar-container {
-display: flex;
-gap: 50px;
-width: 1131px;
-height: 721px;
-justify-content: center;
-align-items: center;
-margin-top: 50px; /* Add this line (you can adjust 50px as you like) */
+  display: flex;
+  gap: 40px;
+  margin-top: 220px;
+  position: relative;
+  z-index: 1;
 }
 
 .bar {
-position: relative;
-width: 300px;
-height: 500px;
-border-radius: 20px;
-overflow: hidden;
-text-align: center;
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-font-family: 'Open Sans', sans-serif;
-font-weight: 600;
+  position: relative;
+  width: 270px;
+  height: 420px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 18px;
+  padding: 30px 20px 0 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .bar-title {
-position: absolute;
-top: 20px;
-left: 50%;
-transform: translateX(-50%);
-font-size: 20px;
-z-index: 2;
+  font-size: 1.2em; /* Reduced from previous size */
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.bar-subtitle {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+  font-weight: 400;
 }
 
 .bar-info {
-position: absolute;
-bottom: 20px;
-width: 100%;
-display: flex;
-justify-content: space-between;
-padding: 0 20px;
-font-size: 16px;
-z-index: 2;
-}
-.bar-info .right {
-position: relative;
-right: 30px; /* move 5px to the left */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
 }
 
 .liquid {
-position: absolute;
-bottom: 0;
-width: 100%;
-height: 50%;
-border-radius: 0 0 20px 20px;
-animation: wave 4s ease-in-out infinite;
-z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+  border-radius: 0 0 18px 18px;
+  animation: water-waves linear infinite;
 }
 
-.subject1 {
-background-color: #FFC1C9;
-}
-.subject1 .liquid {
-background-color: #FD8F9C;
-}
-
-.subject2 {
-background-color: #FBDFC1;
-}
-.subject2 .liquid {
-background-color: #F9B578;
+.water-wave {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  border-radius: 40%;
+  animation: inherit;
 }
 
-.subject3 {
-background-color: #88F5FF;
-}
-.subject3 .liquid {
-background-color: #3FE3F2;
+/* Mechanics water waves - 43% filled */
+.subject1 .water-wave1 {
+  top: 57%;
+  left: -25%;
+  background: #FFC1C9;
+  opacity: 0.7;
+  animation-duration: 5s;
 }
 
+.subject1 .water-wave2 {
+  top: 62%;
+  left: -35%;
+  background: #FD8F9C;
+  opacity: 0.5;
+  animation-duration: 7s;
+}
+
+.subject1 .water-wave3 {
+  top: 67%;
+  left: -35%;
+  background: #FD8F9C;
+  opacity: 0.3;
+  animation-duration: 11s;
+}
+
+/* Thermodynamics water waves - 60% filled */
+.subject2 .water-wave1 {
+  top: 40%;
+  left: -25%;
+  background: #FBDFC1;
+  opacity: 0.7;
+  animation-duration: 5s;
+}
+
+.subject2 .water-wave2 {
+  top: 45%;
+  left: -35%;
+  background: #F9B578;
+  opacity: 0.5;
+  animation-duration: 7s;
+}
+
+.subject2 .water-wave3 {
+  top: 50%;
+  left: -35%;
+  background: #F9B578;
+  opacity: 0.3;
+  animation-duration: 11s;
+}
+
+/* Optics water waves - 67% filled */
+.subject3 .water-wave1 {
+  top: 33%;
+  left: -25%;
+  background: #88F5FF;
+  opacity: 0.7;
+  animation-duration: 5s;
+}
+
+.subject3 .water-wave2 {
+  top: 38%;
+  left: -35%;
+  background: #3FE3F2;
+  opacity: 0.5;
+  animation-duration: 7s;
+}
+
+.subject3 .water-wave3 {
+  top: 43%;
+  left: -35%;
+  background: #3FE3F2;
+  opacity: 0.3;
+  animation-duration: 11s;
+}
+
+@keyframes water-waves {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /*PAGE 4*/
 .page4 {
 height: 115vh; /* Limits height to 80% of viewport but not more than 600px */
@@ -505,4 +571,15 @@ cursor: pointer;
 .footer-nav strong:hover,
 .footer-nav p:hover {
 color: #6D28D9;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 60px;
+    font-weight: 700;
+    position: relative;
+    top: 20px;
+    z-index: 2;
 }
